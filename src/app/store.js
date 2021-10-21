@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import generationsReducer from '../features/generations/generationsSlice';
+import pokemonsReducer from '../features/pokemons/pokemonsSlice';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
-  },
+    generation: generationsReducer,
+    generationDetails: pokemonsReducer
+  }
 });
